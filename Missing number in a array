@@ -1,0 +1,12 @@
+n=int(input("Enter the no.of elements : "))
+A=[];
+B=[];
+for i in range(1,n+1):
+     A.append(i);
+for j in range(1,n):
+     number=int(input(" Enter element : "))
+     B.append(number);
+print("Your input list is : ",B)
+for c in A:
+    if k not in B:
+       print("Missing number is : ",c);

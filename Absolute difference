@@ -1,0 +1,18 @@
+n=int(input("Enter the no.of elements : "))
+l=[]
+min=0;
+temp=0;
+t=0;
+for i in range(0,n):
+    element=int(input("Enter elements : "))
+    l.append(element);
+for j in range(0,n):
+     for k in range(j+1,n):
+          if(l[j]>l[k]):
+                t=l[j];
+                l[j]=l[k];
+                l[k]=t;
+for a in range(1,n):
+     min=abs(l[a-1]-l[a]);
+     temp+=min;
+print("The Absolute difference is : ",temp)

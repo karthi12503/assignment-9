@@ -1,0 +1,22 @@
+n=int(input("Enter the no.of elements: "))
+A=[]
+B=[]
+C=[]
+for i in range(0,n):
+    element=int(input("Enter element: "))
+    if(element==1):
+        B.append(element);
+    elif(element==2):
+        B.append(element);
+    else:
+        if(element>2):
+            for j in range(2,element):
+                if(element%j==0):
+                    C.append(element);
+                    break;
+            else:
+                B.append(element);
+B.sort();
+C.sort();
+A.append(B+C);
+print("Output:",A)

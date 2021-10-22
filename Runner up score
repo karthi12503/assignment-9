@@ -1,0 +1,18 @@
+n=int(input("Enter the no.of elements : "))
+l=[]
+temp=0;
+op=[]
+for i in range(0,n):
+    element=int(input("Enter element : "))
+    l.append(element);
+print("Your input list is : ",l)
+for j in range(0,n):
+     for k in range(j+1,n):
+          if(l[j]>l[k]):
+                temp=l[j];
+                l[j]=l[k];
+                l[k]=temp;
+for a in l:
+     if a not in op:
+        op.append(a);
+print(" Second Highest Score is : ",op[len(op)-2]);
